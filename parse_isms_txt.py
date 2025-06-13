@@ -23,11 +23,11 @@ def parse_isms_txt(txt_path, outdir, label_path=None):
     if start_idx is None:
         raise ValueError("Header line starting with 'D-Dexc' not found")
 
-    # Skip the header line itself and use flexible whitespace separation
+    # Correction ici
     df = pd.read_csv(
         txt_path,
         skiprows=start_idx + 1,
-        sep=r"\s+",
+        sep='\s+',
         names=["DD", "DA", "AA", "S", "E"],
     )
 
