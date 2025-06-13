@@ -33,7 +33,6 @@ def parse_isms_txt(txt_path, outdir):
 
     X_vals = df[["DD", "DA", "AA"]].astype(np.float32).values
     n_frames = X_vals.shape[0]
-
     X = X_vals.reshape(1, n_frames, 3)
 
     name = txt_path.stem
