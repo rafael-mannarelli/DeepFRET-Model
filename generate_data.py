@@ -105,7 +105,7 @@ if __name__ == "__main__":
         n_timesteps=300,
         merge_state_labels=True,
         balance_classes=True,
-        labels_to_binary=False,
+        labels_to_binary=True,
         reduce_memory=True,
         outdir="./data",
     )
